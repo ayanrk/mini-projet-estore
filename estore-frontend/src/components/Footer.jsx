@@ -4,11 +4,9 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <div className="brand-foot">Maison <em style={{color:'var(--terracotta-soft)', fontStyle:'italic'}}>&amp;</em> Store</div>
+            <div className="brand-foot">Maraya <em style={{color:'gray', fontStyle:'italic'}}> Store </em></div>
             <p>
-              Une boutique en ligne pédagogique réalisée dans le cadre du
-              module Full Stack — Spring Boot, JPA, MongoDB &amp; React.
-              Faculté des Sciences Ben M'Sick — Université Hassan II.
+             Chez Maraya Store, nous combinons qualité, innovation et simplicité pour vous offrir la meilleure expérience d’achat en ligne.
             </p>
           </div>
           <div>
@@ -19,15 +17,14 @@ export default function Footer() {
             <p><a href="/orders">Mes commandes</a></p>
           </div>
           <div>
-            <h4>Domaines</h4>
-            <p>Customer · Catalog</p>
-            <p>Inventory · Shopping</p>
-            <p>Billing · Reviews</p>
+            <h4>Contact</h4>
+            <p>Email:   support@estore.com</p>
+            <p>Téléphone:  +212 612345678</p>
+            <p>Adresse:    Casablanca,Maroc</p>
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} E-Store · Mini-projet académique</span>
-          <span>Encadrant : Pr. Omar Zahour</span>
+          <span>© {new Date().getFullYear()} E-Store · Mini-projet Full stack</span>
         </div>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
+import HeaderPages from './components/HeaderPages'
 import Footer from './components/Footer'
 import ProtectedRoute from './components/ProtectedRoute'
 
@@ -18,7 +19,7 @@ export default function App() {
   const location = useLocation()
   // Auth pages utilisent un layout en split-screen sans header/footer classiques
   const isAuthRoute = ['/login', '/register'].includes(location.pathname)
-
+  const isHome = location.pathname === '/'
   if (isAuthRoute) {
     return (
       <div className="app">
@@ -31,9 +32,11 @@ export default function App() {
   }
 
   return (
-    <div className="app">
-      <Header />
-      <main>
+    <div className="app" >
+    {isHome ? <Header /> : <HeaderPages />}
+
+      
+      <main >
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/catalog" element={<CatalogPage />} />
