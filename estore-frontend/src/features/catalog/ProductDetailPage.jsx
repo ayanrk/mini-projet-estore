@@ -133,16 +133,18 @@ export default function ProductDetailPage() {
                 {adding ? 'Ajout…' : (inStock ? 'Ajouter au panier' : 'Indisponible')}
               </button>
             </div>
+            {/*
 
             <p style={{ fontSize: '0.85rem', color: 'var(--ink-mute)' }}>
               Référence : #{product.id} · Catégorie : {product.category?.name || '—'}
             </p>
+            */}
           </div>
         </div>
 
         {/* Section avis (MongoDB) */}
         <section className="reviews-section">
-          <span className="eyebrow">Mongo · Reviews</span>
+          
           <h2 style={{ margin: '0.5rem 0 2rem' }}>Avis des clients</h2>
 
           <ReviewForm productId={id} onAdded={onReviewAdded} />

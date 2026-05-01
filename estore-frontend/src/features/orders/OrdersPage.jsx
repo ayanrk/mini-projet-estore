@@ -46,7 +46,9 @@ export default function OrdersPage() {
     <div className="page">
       <div className="container">
         <header className="page-head">
-          <span className="eyebrow">Billing</span>
+          <span className="eyebrow">  
+            
+          </span>
           <h1>Mes <em style={{color:'var(--terracotta)', fontStyle:'italic'}}>commandes</em></h1>
           <p className="lead" style={{ marginTop: '0.5rem' }}>
             Historique complet de vos achats sur la boutique.
@@ -75,7 +77,7 @@ export default function OrdersPage() {
             <article key={o.id} className="order fade-in" style={{ animationDelay: `${idx * 0.05}s` }}>
               <div className="order-head">
                 <div>
-                  <div className="num">Commande #{o.id}</div>
+                  <div className="num">Commande {o.id}</div>
                   <div className="date">{formatDate(o.orderDate)}</div>
                 </div>
                 <span className={`status ${statusClass(o.status)}`}>

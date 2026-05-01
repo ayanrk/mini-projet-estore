@@ -51,7 +51,7 @@ export default function ProfilePage() {
     <div className="page">
       <div className="container" style={{ maxWidth: 800 }}>
         <header className="page-head">
-          <span className="eyebrow">Customer</span>
+          
           <h1>Mon <em style={{color:'var(--terracotta)', fontStyle:'italic'}}>profil</em></h1>
         </header>
 
@@ -61,15 +61,15 @@ export default function ProfilePage() {
           <h3 style={{ marginTop: '0.5rem', marginBottom: '0.3rem' }}>
             {user.firstName} {user.lastName}
           </h3>
-          <p style={{ color: 'var(--ink-mute)' }}>{user.email}</p>
+          <p style={{ color: 'rgb(92, 92, 92)' }}> {user.email}</p>
           <p style={{ marginTop: '0.6rem', fontSize: '0.82rem', color: 'var(--ink-mute)' }}>
-            ID utilisateur : #{user.userId}
+            
           </p>
         </div>
 
         {/* Coordonnées éditables */}
         <div className="card">
-          <span className="eyebrow" style={{ color: 'var(--ink-mute)' }}>Coordonnées</span>
+          <span className="eyebrow" style={{ color: 'rgb(92, 92, 92)' }}>Coordonnées</span>
           <h3 style={{ marginTop: '0.5rem', marginBottom: '1.5rem' }}>
             Informations de contact
           </h3>

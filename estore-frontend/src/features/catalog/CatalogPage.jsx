@@ -62,7 +62,7 @@ export default function CatalogPage() {
     <div className="page">
       <div className="container">
         <header className="page-head fade-in">
-          <span className="eyebrow">Catalog</span>
+          
           <h1>Notre <em style={{ color: 'var(--terracotta)', fontStyle: 'italic' }}>catalogue</em></h1>
           <p className="lead" style={{ marginTop: '0.5rem' }}>
             Parcourez la sélection, recherchez par mot-clé, filtrez par catégorie.

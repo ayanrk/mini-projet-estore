@@ -73,7 +73,7 @@ export default function CartPage() {
     <div className="page">
       <div className="container">
         <header className="page-head">
-          <span className="eyebrow">Shopping</span>
+          
           <h1>Votre <em style={{color:'var(--terracotta)', fontStyle:'italic'}}>panier</em></h1>
         </header>
 
@@ -155,6 +155,7 @@ export default function CartPage() {
                 className="checkout"
                 onClick={handleCheckout}
                 disabled={placing || items.length === 0}
+                
               >
                 {placing ? 'Validation…' : 'Valider la commande'}
               </button>

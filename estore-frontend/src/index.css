@@ -303,13 +303,14 @@ h3 { font-size: 1.25rem; }
 }
 
 .btn-accent {
-  background: var(--terracotta);
+  background: rgb(39, 39, 39);
   color: var(--cream);
   border-color: var(--terracotta);
 }
 .btn-accent:hover:not(:disabled) {
-  background: var(--terracotta-deep);
-  border-color: var(--terracotta-deep);
+  background: rgb(203, 203, 203);
+  border-color: black;
+  color: #353535;
 }
 
 .btn-outline {
@@ -344,7 +345,7 @@ h3 { font-size: 1.25rem; }
 
 .btn-sm { padding: 0.55rem 1rem; font-size: 0.82rem; }
 .btn-lg { padding: 1rem 2rem; font-size: 1rem; }
-.btn-block { width: 100%; }
+.btn-block { width: 100%; background: rgb(41, 41, 41);color: rgb(255, 255, 255);}
 
 .btn:disabled {
   opacity: 0.5;
@@ -371,7 +372,7 @@ h3 { font-size: 1.25rem; }
 .field input,
 .field textarea,
 .field select {
-  background: var(--cream-soft);
+  background:whitesmoke;
   border: 1px solid var(--line);
   padding: 0.85rem 1rem;
   border-radius: var(--radius);
@@ -403,7 +404,7 @@ h3 { font-size: 1.25rem; }
    Cards & lists
    ========================================================================== */
 .card {
-  background: var(--cream-soft);
+  background: rgb(202, 202, 202);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   padding: 1.6rem;
@@ -607,12 +608,12 @@ h3 { font-size: 1.25rem; }
    Auth pages
    ========================================================================== */
 .auth-wrap {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 3px);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .auth-side {
-  background: var(--ink);
+  background: rgb(41, 41, 41);
   color: var(--cream);
   padding: 4rem 3rem;
   display: flex;
@@ -821,14 +822,14 @@ h3 { font-size: 1.25rem; }
   cursor: pointer;
   transition: background 0.2s;
 }
-.summary .checkout:hover { background: var(--terracotta-deep); }
+
 .summary .checkout:disabled { background: var(--ink-mute); cursor: not-allowed; }
 
 /* ==========================================================================
    Orders
    ========================================================================== */
 .order {
-  background: var(--cream-soft);
+  background: rgb(202, 202, 202);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   padding: 1.5rem 1.8rem;
@@ -841,7 +842,7 @@ h3 { font-size: 1.25rem; }
   flex-wrap: wrap;
   gap: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--line-soft);
+  border-bottom: 1px solid rgb(185, 185, 185);
   margin-bottom: 1rem;
 }
 .order-head .num {
@@ -849,7 +850,7 @@ h3 { font-size: 1.25rem; }
   font-size: 1.2rem;
   font-weight: 500;
 }
-.order-head .date { font-size: 0.85rem; color: var(--ink-mute); }
+.order-head .date { font-size: 0.85rem; color: rgb(94, 94, 94); }
 .status {
   display: inline-block;
   padding: 0.25rem 0.7rem;
@@ -859,19 +860,20 @@ h3 { font-size: 1.25rem; }
   text-transform: uppercase;
   font-weight: 600;
 }
-.status-pending { background: rgba(200, 155, 60, 0.15); color: var(--gold); }
+.status-pending { background: rgba(0, 0, 0, 0.15); color: whitesmoke; }
 .status-confirmed { background: rgba(122, 132, 80, 0.15); color: var(--olive); }
 .status-shipped { background: rgba(58, 87, 121, 0.15); color: #3a5779; }
-.order-items { font-size: 0.92rem; color: var(--ink-soft); }
+.order-items { font-size: 0.92rem; color: rgb(1, 1, 1); }
 .order-item-line {
   display: flex;
   justify-content: space-between;
   padding: 0.4rem 0;
+  
 }
 .order-foot {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--line-soft);
+  border-top: 1px solid rgb(185, 185, 185);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -893,6 +895,8 @@ h3 { font-size: 1.25rem; }
 .review {
   padding: 1.5rem 0;
   border-bottom: 1px solid var(--line-soft);
+  border: #000000;
+ 
 }
 .review:last-child { border-bottom: none; }
 .review-head {
@@ -906,10 +910,10 @@ h3 { font-size: 1.25rem; }
   font-size: 0.95rem;
 }
 .review-date { font-size: 0.78rem; color: var(--ink-mute); }
-.review-rating { color: var(--gold); font-size: 1rem; letter-spacing: 0.1em; }
-.review-comment { color: var(--ink-soft); font-family: var(--serif); font-size: 1rem; line-height: 1.6; }
+.review-rating { color: rgb(188, 188, 15); font-size: 1rem; letter-spacing: 0.1em; }
+.review-comment { color: var(--ink-soft);   font-family: var(--serif); font-size: 1rem; line-height: 1.6; }
 .review-form {
-  background: var(--cream-soft);
+  background: rgb(218, 213, 213);
   padding: 1.8rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--line);
@@ -927,7 +931,7 @@ h3 { font-size: 1.25rem; }
   padding: 0;
 }
 .rating-input button.on,
-.rating-input button:hover { color: var(--gold); }
+.rating-input button:hover { color: rgb(188, 188, 15); }
 
 /* ==========================================================================
    Alerts / messages

@@ -31,12 +31,7 @@ export default function ReviewsList({ reviews }) {
         }}>
           {avg.toFixed(1)}
         </span>
-        <span style={{ color: 'var(--gold)', fontSize: '1.1rem', letterSpacing: '0.1em' }}>
-          {'★'.repeat(Math.round(avg))}{'☆'.repeat(5 - Math.round(avg))}
-        </span>
-        <span style={{ color: 'var(--ink-mute)', fontSize: '0.9rem' }}>
-          {reviews.length} avis
-        </span>
+        
       </div>
 
       {reviews.map(r => (
