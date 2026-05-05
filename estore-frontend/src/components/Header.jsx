@@ -31,7 +31,6 @@ export default function Header() {
     <header className={scrolled ? "header scrolled" : "header"}>
       <div className="container nav">
         <Link to="/" className="brand">
-<<<<<<< Updated upstream
           <img  src="/Logo gray.png"
             alt="Collection Femme" 
             width="50px"
@@ -45,10 +44,6 @@ export default function Header() {
           <span className="brand-amp">
           <span>Maraya<span className="brand-amp"> </span>Store</span>
           </span>
-=======
-         <img src="/logo.png" alt="logo" className="brand-mark" />
-          <span>Maison<span className="brand-amp">&amp;</span>Store</span>
->>>>>>> Stashed changes
         </Link>
 
         <ul className="nav-links">
@@ -56,6 +51,13 @@ export default function Header() {
           <li><NavLink to="/catalog">Catalogue</NavLink></li>
           {user && <li><NavLink to="/orders">Commandes</NavLink></li>}
           {user && <li><NavLink to="/profile">Profil</NavLink></li>}
+          {user?.email === 'admin@estore.com' && (
+  <li>
+    <NavLink to="/admin" style={{ color: 'var(--terracotta)', fontWeight: 700 }}>
+      ⚙ Admin
+    </NavLink>
+  </li>
+)}
         </ul>
 
         <div className="nav-actions">
@@ -72,22 +74,12 @@ export default function Header() {
           ) : (
             <>
               <Link to="/login" className="btn btn-ghost btn-sm">Connexion</Link>
-<<<<<<< Updated upstream
             </>
           )}
           <Link to="/cart" className="cart-btn" >
             <img src="/icone paniers.png" alt="panier" className='cart-icon' />
             <span className="cart-count" >{itemCount}</span>
           </Link>
-=======
-              
-            </>
-          )}
-          <Link to="/cart" className="cart-btn">
-            <img src="/icon panier (2).png" alt="Panier" className="cart-icon" />
-            <span className="cart-count">{itemCount}</span>
-         </Link>
->>>>>>> Stashed changes
         </div>
       </div>
     </header>

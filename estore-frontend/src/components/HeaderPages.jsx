@@ -46,6 +46,13 @@ export default function HeaderPages() {
           <li><NavLink to="/catalog">Catalogue</NavLink></li>
           {user && <li><NavLink to="/orders">Commandes</NavLink></li>}
           {user && <li><NavLink to="/profile">Profil</NavLink></li>}
+          {user?.email === 'admin@estore.com' && (
+  <li>
+    <NavLink to="/admin" style={{ color: 'var(--terracotta)', fontWeight: 700 }}>
+      ⚙ Admin
+    </NavLink>
+  </li>
+)}
         </ul>
 
         <div className="nav-actions">

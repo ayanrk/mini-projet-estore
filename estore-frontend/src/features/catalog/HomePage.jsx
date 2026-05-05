@@ -23,7 +23,6 @@ export default function HomePage() {
           onMouseLeave={e => e.currentTarget.querySelector('img').style.transform = 'scale(1)'}
         >
           <img
-<<<<<<< Updated upstream
             src="/b1.webp"
             alt="Collection Femme"
             style={{
@@ -31,16 +30,6 @@ export default function HomePage() {
               objectFit: 'cover',
               transition: 'transform 0.8s ease',
               filter: 'brightness(0.7)',
-=======
-            src="/public/b1.webp.jpeg"
-            alt="Collection Femme"
-            style={{
-              width: '  100%', height: '100vh',
-              objectFit: 'cover',
-              transition: 'transform 0.8s ease',
-              filter: 'brightness(0.7)',
-          
->>>>>>> Stashed changes
             }}
           />
           {/* Overlay dégradé bas */}
@@ -55,11 +44,7 @@ export default function HomePage() {
           }}>
             <p style={{
               fontSize: '0.72rem', letterSpacing: '0.2em',
-<<<<<<< Updated upstream
               textTransform: 'uppercase', marginBottom: '0.6rem',
-=======
-              textTransform: 'uppercase', marginBottom: '0.8rem',
->>>>>>> Stashed changes
               opacity: 0.85, fontFamily: 'var(--sans)',
             }}>
               NOUVELLE COLLECTION
@@ -104,22 +89,12 @@ export default function HomePage() {
           onMouseLeave={e => e.currentTarget.querySelector('img').style.transform = 'scale(1)'}
         >
           <img
-<<<<<<< Updated upstream
             src="/b2.webp"
             alt="Collection Homme"
             style={{
               width: '100%', height: '100%',
               objectFit:'cover',
            
-=======
-            src="/public/b2.webp.jpeg"
-            alt="Collection Homme"
-            style={{
-              width: '100%', height: '100%',
-              objectFit: 'cover',
-              transition: 'transform 0.8s ease',
-              filter: 'brightness(0.65)',
->>>>>>> Stashed changes
             }}
           />
           <div style={{
@@ -128,11 +103,7 @@ export default function HomePage() {
           }} />
           <div style={{
             position: 'absolute', bottom: '2.5rem', left: '2.5rem', right: '2.5rem',
-<<<<<<< Updated upstream
             color: '#fff',
-=======
-            color: '#fae8e8',
->>>>>>> Stashed changes
           }}>
             <p style={{
               fontSize: '0.72rem', letterSpacing: '0.2em',
@@ -145,7 +116,6 @@ export default function HomePage() {
               fontFamily: 'var(--serif)', fontWeight: 300,
               fontSize: 'clamp(1.6rem, 2.5vw, 2.4rem)',
               letterSpacing: '0.04em', textTransform: 'uppercase',
-<<<<<<< Updated upstream
               lineHeight: 1.15,color: '#b5b5b5', marginBottom: '1.2rem',
             }}>
               
@@ -171,14 +141,6 @@ export default function HomePage() {
             >
               Explorer
             </Link> */}
-=======
-              lineHeight: 1.15, marginBottom: '1.2rem',
-              color: '#a5a4a4',
-            }}>
-              Collection  <br/> Confort et style
-            </h2>
-           
->>>>>>> Stashed changes
           </div>
         </div>
 
@@ -220,7 +182,6 @@ export default function HomePage() {
         }} />
       </section>
 
-<<<<<<< Updated upstream
       {/* ── BANDE DE CATÉGORIES ── 
       <section style={{
         background: '#111',
@@ -256,9 +217,6 @@ export default function HomePage() {
         </div>
       </section>
       */}
-=======
-    
->>>>>>> Stashed changes
 
       {/* ── SECTION ÉDITORIAL 3 COLONNES ── */}
       <section style={{
@@ -274,16 +232,11 @@ export default function HomePage() {
         }}>
           {[
             {
-<<<<<<< Updated upstream
               img: '/watch.jpg',
-=======
-              img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80',
->>>>>>> Stashed changes
               label: 'ACCESSOIRES',
               title: 'Montres & Style',
             },
             {
-<<<<<<< Updated upstream
               img: '/shoes.jpg',
               label: 'SPORT',
               title: 'Fit & Sport' ,
@@ -292,16 +245,6 @@ export default function HomePage() {
               img: '/camera.jpg',
               label: 'TECHNOLOGIE',
               title: 'High & Tech',
-=======
-              img: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80',
-              label: 'SPORT',
-              title: 'Performance & Design',
-            },
-            {
-              img: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600&q=80',
-              label: 'TECHNOLOGIE',
-              title: 'Innovation Quotidienne',
->>>>>>> Stashed changes
             },
           ].map((item) => (
             <Link key={item.label} to="/catalog" style={{
@@ -381,13 +324,8 @@ export default function HomePage() {
           marginBottom: '2.5rem',
           lineHeight: 1.1,
         }}>
-<<<<<<< Updated upstream
            L’excellence à portée <br />
           <em style={{ fontStyle: 'italic', color: '#b7b4b3' }}>de main</em>
-=======
-          L'excellence à portée<br />
-          <em style={{ fontStyle: 'italic', color: '#e8b9ad' }}>de panier</em>
->>>>>>> Stashed changes
         </h2>
         <Link to="/catalog" style={{
           display: 'inline-block',
@@ -404,11 +342,7 @@ export default function HomePage() {
           onMouseEnter={e => { e.currentTarget.style.background = '#6b6b6b'; e.currentTarget.style.color = '#000' }}
           onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#0c0c0c' }}
         >
-<<<<<<< Updated upstream
           Découvrez le catalogue entier
-=======
-          Voir le catalogue complet
->>>>>>> Stashed changes
         </Link>
       </section>
 

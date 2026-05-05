@@ -14,6 +14,7 @@ import RegisterPage from './features/auth/RegisterPage'
 import CartPage from './features/cart/CartPage'
 import OrdersPage from './features/orders/OrdersPage'
 import ProfilePage from './features/profile/ProfilePage'
+import AdminPage from './features/admin/AdminPage'
 
 export default function App() {
   const location = useLocation()
@@ -51,6 +52,7 @@ export default function App() {
           <Route path="/profile" element={
             <ProtectedRoute><ProfilePage /></ProtectedRoute>
           } />
+          <Route path="/admin" element={<AdminPage />} />
 
           {/* 404 */}
           <Route path="*" element={
