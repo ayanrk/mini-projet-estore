@@ -115,7 +115,7 @@ export default function RegisterPage() {
           textTransform: 'uppercase',
           zIndex: 2,
         }}>
-          Maryana Store
+          Maraya Store
         </Link>
 
         {/* Texte bas gauche */}

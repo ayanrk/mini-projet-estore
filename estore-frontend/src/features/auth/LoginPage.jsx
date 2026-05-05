@@ -79,7 +79,7 @@ export default function LoginPage() {
           textTransform: 'uppercase',
           zIndex: 2,
         }}>
-          Maryana Store
+          Maraya Store
         </Link>
 
         {/* Texte bas gauche */}
