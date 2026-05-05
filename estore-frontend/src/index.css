@@ -200,12 +200,15 @@ h3 { font-size: 1.25rem; }
   font-size: 0.92rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  color: rgba(255, 255, 255, 0.75);
+  color: #ffffff;
   position: relative;
   transition: color 0.2s;
 }
-.nav-links a:hover { color: var(--ink); }
-.nav-links a.active { color: var(--terracotta); }
+.nav-links a:hover { 
+  color: #aea9a9;
+  
+ }
+.nav-links a.active { color: #ffffff; }
 .nav-links a.active::after {
   content: '';
   position: absolute;
@@ -213,13 +216,14 @@ h3 { font-size: 1.25rem; }
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--terracotta);
+  background: #ffffff;;
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 1rem;
+
 }
 
 .cart-btn {
@@ -301,7 +305,7 @@ h3 { font-size: 1.25rem; }
   
 }
 .btn-ghost:hover:not(:disabled) {
-  color: #000000;
+  color: #aea9a9;
   
 }
 

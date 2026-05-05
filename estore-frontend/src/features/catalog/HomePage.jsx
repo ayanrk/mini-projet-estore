@@ -23,7 +23,7 @@ export default function HomePage() {
           onMouseLeave={e => e.currentTarget.querySelector('img').style.transform = 'scale(1)'}
         >
           <img
-            src="/b1.webp"
+            src="/home1.jpg"
             alt="Collection Femme"
             style={{
               width: '100%', height: '100%',
@@ -89,7 +89,7 @@ export default function HomePage() {
           onMouseLeave={e => e.currentTarget.querySelector('img').style.transform = 'scale(1)'}
         >
           <img
-            src="/b2.webp"
+            src="/home2.jpg"
             alt="Collection Homme"
             style={{
               width: '100%', height: '100%',
