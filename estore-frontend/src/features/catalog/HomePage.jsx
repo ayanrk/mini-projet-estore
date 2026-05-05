@@ -53,7 +53,7 @@ export default function HomePage() {
               fontFamily: 'var(--serif)', fontWeight: 300,
               fontSize: 'clamp(1.6rem, 2.5vw, 2.4rem)',
               letterSpacing: '0.04em', textTransform: 'uppercase',
-              lineHeight: 1.15, marginBottom: '1.2rem',
+              lineHeight: 1.15, marginBottom: '1.2rem',color:'#b5b5b5',
             }}>
               Collection<br/>Printemps
             </h2>
