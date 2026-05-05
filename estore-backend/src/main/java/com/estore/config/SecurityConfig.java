@@ -1,0 +1,4 @@
+package com.estore.config;
+
+public class SecurityConfig {
+}
