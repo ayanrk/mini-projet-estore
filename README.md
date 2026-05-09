@@ -126,7 +126,7 @@ server.port=8080
 # MySQL
 spring.datasource.url=jdbc:mysql://localhost:3307/estore_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
 spring.datasource.username=root
-spring.datasource.password=Mbarka0101
+spring.datasource.password=
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 # JPA
